@@ -3,5 +3,7 @@ project (CPP-LAB-3
 cmake_minimum_required(VERSION 2.8.12) # Минимальная допустимая версия CMake
 add_executable (lab3 main.c) # Бинарный файл находитя в build/lab3
 add_compile_options(-Wall -Wextra -Wpedantic) # Опции компиляции для предупреждений
+add_compile_options(-O3) # Опции компиляции для оптимизаций
+add_compile_options(-s) # Удаляем лишнюю информацию из программы
 set_property(TARGET lab3 PROPERTY C_STANDARD 99) # Используем стандарт C99
 set(EXECUTABLE_OUTPUT_PATH ..) # Путь скомпилированной программы

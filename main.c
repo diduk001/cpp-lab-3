@@ -9,7 +9,7 @@ int min(int a, int b)
   return b;
 }
 
-// Рекурсивная функция, во
+// Рекурсивная функция
 int getResult(int i, const int n, const int *array, int first_sum, int second_sum)
 {
   if (i == n)
