@@ -28,9 +28,7 @@ int main()
 
   int *array = malloc(sizeof(int) * n);
   for (int i = 0; i < n; i++)
-  {
     scanf("%d", &array[i]);
-  }
 
   int result = getResult(0, n, array, 0, 0);
   printf("%d\n", result);
