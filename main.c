@@ -15,6 +15,8 @@ int getResult(int i, const int n, const int *array, int first_sum, int second_su
   if (i == n)
     return abs(first_sum - second_sum);
   int variant1 = getResult(i + 1, n, array, first_sum + array[i], second_sum);
+  if (variant1 == 0)
+    return 0;
   int variant2 = getResult(i + 1, n, array, first_sum, second_sum + array[i]);
   return min(variant1, variant2);
 }
