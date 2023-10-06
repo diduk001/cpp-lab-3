@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 for test_file in tests/TEST*.txt
 do
